@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Demo App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_menu_title">Главное меню.</string>
+    <string name="todo">TODO</string>
+</resources>

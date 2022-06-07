@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+    <Toolbar
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="?colorPrimary"
+        android:title="@string/main_menu_title"
+        android:titleTextColor="?colorOnPrimary" />
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_title" />
+
+    </FrameLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:columnCount="1"
+        android:rowCount="1">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/item_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пункт 1"
+            android:textSize="25sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/item_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пункт 2"
+            android:textSize="25sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/item_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пункт 3"
+            android:textSize="25sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/item_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пункт 4"
+            android:textSize="25sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/item_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пункт 5"
+            android:textSize="25sp" />
+    </GridLayout>
+</LinearLayout>
